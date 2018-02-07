@@ -1,0 +1,37 @@
+
+<div>
+		<style type="text/css">
+/*div#rMenu {z-index: 10000;position:fixed; visibility:hidden; top:0; background-color: #555;text-align: left;padding: 2px;}
+div#rMenu ul li{
+	margin: 1px 0;
+	padding: 0 5px;
+	cursor: pointer;
+	list-style: none outside none;
+	background-color: #DFDFDF;
+}*/
+
+	</style>
+	<!--<div id="rMenu">
+			<ul>
+				<li id="m_add">增加节点</li>
+				<li id='m_rename'>重命名</li>
+				<li id="m_del">删除节点</li>
+			</ul>
+		</div>-->
+	<div class='col-xs-12' style='margin-top: 10px'>
+		<!--<div class="input-group">
+	        <input type="search" placeholder="请输入搜索文字" class="form-control" ng-model="searchText" ng-keydown="search()">
+	        <span class="input-group-btn" ng-click="search()">
+	          <a class="btn btn-info btn-sm ant-btn">
+	            <i class=" icon-search nav-search-icon  bigger-110"></i>
+	          </a>
+	        </span>
+      	</div>-->
+		<input style='border-radius: 6px;' class='form-control col-xs-4 col-sm-5' ng-if='!cantSearch' placeholder="输入搜索文字" ng-model="query" ng-change="findNodes(query)">
+	</div>
+	<div style='overflow: hidden;' class='col-xs-12'>
+		<ul id="treeDemo" class="ztree"></ul> 
+		
+	</div>
+	
+</div>	
